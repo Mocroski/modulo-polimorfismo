@@ -8,7 +8,7 @@ public class FuncaoAutenticacao {
     private PermitirAcesso permitirAcesso;
 
     public boolean autenticar() {
-        return permitirAcesso.autenticar();
+        return permitirAcesso.autenticar(/*estava dando erro entao eu retirei os parametros String do permitir acesso*/);
     }
 
     public FuncaoAutenticacao(PermitirAcesso acesso) {
